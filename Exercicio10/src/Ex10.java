@@ -6,7 +6,7 @@ public class Ex10 {
 		
 		Scanner leitor = new Scanner(System.in);
 		
-		int[] idades = new int[10];
+		int[] idades = new int[75];
 		
 		for (int i = 0; i < idades.length; i++) {
 			

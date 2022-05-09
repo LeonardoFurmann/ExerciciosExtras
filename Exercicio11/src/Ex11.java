@@ -21,13 +21,13 @@ public class Ex11 {
 			sexos[i] = leitor.nextLine();
 			
 			switch(sexos[i]) {
-				case "m":
+				case "Masculino":
 					System.out.println("Nome: " + nomes[i]);
 					System.out.println("Homem");
 					h++;
 					i++;
 				break;
-				case "f":
+				case "Feminino":
 					System.out.println("Nome: " + nomes[i]);
 					System.out.println("Mulher");
 					m++;
@@ -39,7 +39,7 @@ public class Ex11 {
 			
 		}while(i<8);
 		
-		System.out.println("Quantidade de homens: " + h);
+		System.out.println("\n\nQuantidade de homens: " + h);
 		System.out.println("Quantidade de mulheres: " + m);
 		
 		leitor.close();
