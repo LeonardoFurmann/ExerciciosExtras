@@ -57,7 +57,7 @@ public class Pessoa {
 		} else if(genero.equalsIgnoreCase("feminino")) {
 			verGenero = false;
 		} else {
-		System.out.println("\nDado inválido, digite novamente\n");
+		System.out.println("\nDado inválido, digite novamente: \n");
 			getGenero();
 		}
 		
