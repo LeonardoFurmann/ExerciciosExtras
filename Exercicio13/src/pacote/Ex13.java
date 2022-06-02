@@ -19,7 +19,7 @@ public class Ex13 {
 			Pessoa novaPessoa = new Pessoa();
 			
 			novaPessoa.nome = novaPessoa.getNome(); 
-			novaPessoa.genero= novaPessoa.getGenero();
+			novaPessoa.genero = novaPessoa.getGenero();
 			novaPessoa.idade= novaPessoa.getIdade();
 			novaPessoa.saude= novaPessoa.getSaude();
 			

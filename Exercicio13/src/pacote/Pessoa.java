@@ -12,7 +12,7 @@ public class Pessoa {
 	
 	Scanner leitorDoObjeto = new Scanner(System.in);
 	
-	public String getNome() {
+	 String getNome() {
 		
 		System.out.print("\nDigite o nome da pessoa: ");
 		nome = this.leitorDoObjeto.nextLine();
@@ -20,7 +20,7 @@ public class Pessoa {
 		return nome;
 	}
 
-	public String getGenero() {
+	 String getGenero() {
 		
 		System.out.print("Digite o gênero da pessoa(Masculino ou Feminino): ");
 		genero  = this.leitorDoObjeto.nextLine();
@@ -28,7 +28,7 @@ public class Pessoa {
 		return genero;
 	}
 
-	public int getIdade() {
+	 int getIdade() {
 		
 		System.out.print("Digite a idade da pessoa: ");
 		idade = this.leitorDoObjeto.nextInt();
@@ -37,15 +37,15 @@ public class Pessoa {
 		return idade;
 	}
 
-	public String getSaude() {
+	 String getSaude() {
 		
-		System.out.print("Digite o estado de saúde da pessoa(Saldável ou Doente): ");
+		System.out.print("Digite o estado de saúde da pessoa(Saudável ou Doente): ");
 		saude = this.leitorDoObjeto.nextLine();
 		
 		return saude;
 	}
 
-	public void  setPessoa(Pessoa novaPessoa) {
+	void  setPessoa(Pessoa novaPessoa) {
 		
 		boolean ver, verIdade, verGenero = false, verSaude = false;
 		
@@ -57,7 +57,7 @@ public class Pessoa {
 		} else if(genero.equalsIgnoreCase("feminino")) {
 			verGenero = false;
 		} else {
-		System.out.println("\nDado inválido, digite novamente: \n");
+			Invalido();
 			getGenero();
 		}
 		
@@ -67,7 +67,7 @@ public class Pessoa {
 		} else if(saude.equalsIgnoreCase("doente")) {
 			verSaude = false;
 		} else {
-			System.out.println("\nDado inválido, digite novamente:\n");
+			Invalido();
 			getSaude();
 		}
 		
@@ -85,7 +85,9 @@ public class Pessoa {
 		return ver;
 	}
 	
-	
+	void Invalido () {
+		System.out.println("\nDado inválido, digite novamente: \n");
+	}
 	
 	
 	
