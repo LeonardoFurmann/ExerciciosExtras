@@ -26,11 +26,14 @@ public class Ex15 {
 					
 					switch(op) {
 					case 1:
-						novoValor = valor - (valor * 25) / 100;
+						novoValor = valor - (valor * 25 / 100);
+					break;
 					case 2:
-						novoValor = valor - (valor * 21) / 100;
+						novoValor = valor - (valor * 21 / 100);
+					break;
 					case 3:
-						novoValor = valor - (valor * 14) / 100;
+						novoValor = valor - (valor * 14 / 100);
+					break;
 					
 					}
 					System.out.println("\nValor com desconto: " + novoValor);
